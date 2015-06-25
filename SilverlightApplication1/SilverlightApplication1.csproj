@@ -60,6 +60,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core">
@@ -67,7 +68,12 @@
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Windows.Controls.Navigation" />
+    <Reference Include="System.Windows.Controls.Pivot, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Pivot.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Controls.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Windows.Controls.Toolkit.Internals, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
@@ -80,8 +86,8 @@
     <Compile Include="home.xaml.cs">
       <DependentUpon>home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="log-in.xaml.cs">
-      <DependentUpon>log-in.xaml</DependentUpon>
+    <Compile Include="LogIn.xaml.cs">
+      <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="menu.xaml.cs">
       <DependentUpon>menu.xaml</DependentUpon>
@@ -97,9 +103,9 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="log-in.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    <Page Include="LogIn.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="menu.xaml">
       <SubType>Designer</SubType>
@@ -118,18 +124,23 @@
     <Resource Include="beef_on.png" />
     <Resource Include="chicken_off.png" />
     <Resource Include="chicken_on.png" />
+    <Resource Include="facebook.png" />
     <Resource Include="fish_off.png" />
     <Resource Include="fish_on.png" />
+    <Resource Include="google+.png" />
     <Resource Include="lamb_off.png" />
     <Resource Include="lamb_on.png" />
     <Resource Include="logo.png" />
     <Resource Include="pattern_2.jpg" />
-    <Resource Include="pattern_3.jpg" />
     <Resource Include="pork_off.png" />
     <Resource Include="pork_on.png" />
     <Resource Include="texture_11.jpg" />
+    <Resource Include="twitter.png" />
     <Resource Include="vegatable_off.png" />
     <Resource Include="vegatable_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pattern_3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
